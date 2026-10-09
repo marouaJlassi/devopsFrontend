@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "sonar": "sonar-scanner-npm"
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
