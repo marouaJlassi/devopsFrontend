@@ -2,7 +2,7 @@ services:
   frontend:
     build: .
     ports:
-      - '4200:8082'
+      - '4300:8082'
     restart: unless-stopped
 
   nginx-exporter:
