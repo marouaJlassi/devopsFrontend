@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: angular-k8s-deployment
-  namespace: angular-k8s
+  namespace: formationdevops
 spec:
   replicas: 3
   selector:
@@ -24,7 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: angular-k8s-service
-  namespace: angular-k8s
+  namespace: formationdevops
   labels:
     name: angular-k8s-deployment
 spec:
@@ -33,6 +33,6 @@ spec:
     app: angular-k8s-deployment
   ports:
     - port: 85
-      targetPort: 85
+      targetPort: 8082
       protocol: TCP
       # nodePort omitted: Kubernetes assigns a free one, so no collisions
