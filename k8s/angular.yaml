@@ -35,4 +35,3 @@ spec:
     - port: 85
       targetPort: 8082
       protocol: TCP
-      # nodePort omitted: Kubernetes assigns a free one, so no collisions
