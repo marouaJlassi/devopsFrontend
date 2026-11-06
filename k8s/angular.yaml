@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: angular-k8s-deployment
   namespace: formationdevops
+  annotations:
+    test: “git-push-1”
 spec:
   replicas: 3
   selector:
